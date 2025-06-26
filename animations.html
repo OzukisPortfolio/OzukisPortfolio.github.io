@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animations - Ozuki Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    /* Same grid styles as builds */
+    #animations .animation-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    #animations .animation-box {
+      background: #222;
+      border-radius: 6px;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    #animations .animation-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px crimson;
+    }
+    #animations .animation-box h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 600;
+      color: crimson;
+      text-align: center;
+    }
+    #animations .animation-box video,
+    #animations .animation-box iframe {
+      width: 100%;
+      max-height: 200px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      background: black;
+    }
+    #animations .animation-box p {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #ddd;
+      text-align: center;
+      flex-grow: 1;
+    }
+    @media (max-width: 700px) {
+      #animations .animation-box video,
+      #animations .animation-box iframe {
+        max-height: 180px;
+      }
+    }
+    @media (max-width: 400px) {
+      #animations .animation-box video,
+      #animations .animation-box iframe {
+        max-height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="index.html">Portfo<span>lio.</span></a></div>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-btn">Home</a></li>
+        <li><a href="index.html#about" class="menu-btn">About</a></li>
+        <li><a href="index.html#services" class="menu-btn active">Skills</a></li>
+        <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="services" id="animations">
+    <div class="max-width">
+      <h2 class="title">Animations</h2>
+
+      <div class="animation-container">
+        <div class="animation-box">
+          <h3>Animation 1: Character Dance</h3>
+          <video controls>
+            <source src="videos/character-dance.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>A smooth dance animation I created for Roblox characters.</p>
+        </div>
+
+        <div class="animation-box">
+          <h3>Animation 2: Jump Sequence</h3>
+          <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          <p>A jump and landing animation sequence used in game projects.</p>
+        </div>
+
+        <div class="animation-box">
+          <h3>Animation 3: Idle Stance</h3>
+          <video controls>
+            <source src="videos/idle-stance.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>A looping idle stance animation with subtle movements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Created By <a href="index.html">Ozuki</a> | <span class="far fa-copyright"></span> All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
