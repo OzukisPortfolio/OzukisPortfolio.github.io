@@ -749,3 +749,74 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+/* games section styling */
+.games{
+  background: #111;
+  color: #fff;
+}
+.games .title::before{
+  background: #fff;
+}
+.games .title::after{
+  content: "what i've made";
+  background: #111;
+}
+.games .games-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.games-content .game-card{
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+.games-content .game-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.games-content .game-card .game-info{
+  padding: 15px;
+}
+.games-content .game-card h3{
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+.games-content .game-card p{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.games-content .game-card a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.games-content .game-card a:hover{
+  background: #fff;
+  color: crimson;
+}
+.games-content .game-card:hover{
+  transform: translateY(-5px);
+}
+
+/* responsive */
+@media (max-width: 991px){
+  .games-content .game-card{
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 600px){
+  .games-content .game-card{
+    width: 100%;
+  }
+}
