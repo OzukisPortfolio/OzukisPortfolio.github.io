@@ -109,54 +109,79 @@
     </section>
 
 
-<div class="contact-content">
-  <!-- Left side contact info -->
-  <div class="column left">
-    <div class="text">Get in Touch</div>
-    <p>Contact me</p>
-    <div class="icons">
-      <div class="row">
-        <img src="https://media.discordapp.net/attachments/710585456709992449/1387850039371759706/3237155-200.png?ex=68617a92&is=68602912&hm=ba2dd718841794cbadbf6cb090d56bfb540d6ebf84da987242b803ebd120ead9&=&format=webp&quality=lossless" alt="name icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
-        <div class="info">
-          <div class="head">Name</div>
-          <div class="sub-title">Ozuki</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <img src="https://cdn.discordapp.com/attachments/710585456709992449/1387850039161782354/discord-black-icon-1.png?ex=68617a92&is=68602912&hm=874268e4df636c113262700a326b86f5091a837999c47572f030a347e6238e56&" alt="discord icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
-        <div class="info">
-          <div class="head">Discord</div>
-          <div class="sub-title">0zuki</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <img src="https://cdn.discordapp.com/attachments/710585456709992449/1387850039631679508/0eeeb19633422b1241f4306419a0f15f39d58de9.png?ex=68617a92&is=68602912&hm=11d072556dc862450d736f2740ec15db5b010b85ecbae3e1176dec046e0d47c9&" alt="roblox icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
-        <div class="info">
-          <div class="head">Roblox</div>
-          <div class="sub-title">potatogamer9002</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Right side: Group card -->
-  <div class="column right">
-    <div class="text">My Roblox Group</div>
-    <div class="contact-group-card" style="display:flex; align-items:center; background:#222; padding:20px; border-radius:8px; margin-top:10px;">
-      <img src="https://tr.rbxcdn.com/0c7b5c2596eabeed57931d60f6cc0315/150/150/Image/Png" alt="Group Icon" style="height:70px; width:70px; border-radius:10px; object-fit:cover; margin-right:20px;">
+<section class="contact" id="contact">
+  <div class="max-width">
+    <h2 class="title">Contact me</h2>
+    <div class="contact-content">
       
-      <div>
-        <h3 style="margin:0; font-size:22px;">Join my Roblox group</h3>
-        <p style="margin:5px 0;">Candlestick Studios | <span id="memberCount">Loading...</span> members</p>
-        <a href="https://www.roblox.com/groups/4616307/Candlestick-studios#!/about" target="_blank" style="display:inline-block; padding:8px 16px; background:crimson; color:white; text-decoration:none; border-radius:5px; margin-top:5px;">Join Group</a>
+      <!-- Left column: contact info -->
+      <div class="column left">
+        <div class="text">Get in Touch</div>
+        <p>Contact me</p>
+        <div class="icons">
+          <div class="row">
+            <img src="https://media.discordapp.net/attachments/710585456709992449/1387850039371759706/3237155-200.png?ex=68617a92&is=68602912&hm=ba2dd718841794cbadbf6cb090d56bfb540d6ebf84da987242b803ebd120ead9&=&format=webp&quality=lossless" alt="name icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
+            <div class="info">
+              <div class="head">Name</div>
+              <div class="sub-title">Ozuki</div>
+            </div>
+          </div>
+          <div class="row">
+            <img src="https://cdn.discordapp.com/attachments/710585456709992449/1387850039161782354/discord-black-icon-1.png?ex=68617a92&is=68602912&hm=874268e4df636c113262700a326b86f5091a837999c47572f030a347e6238e56&" alt="discord icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
+            <div class="info">
+              <div class="head">Discord</div>
+              <div class="sub-title">0zuki</div>
+            </div>
+          </div>
+          <div class="row">
+            <img src="https://cdn.discordapp.com/attachments/710585456709992449/1387850039631679508/0eeeb19633422b1241f4306419a0f15f39d58de9.png?ex=68617a92&is=68602912&hm=11d072556dc862450d736f2740ec15db5b010b85ecbae3e1176dec046e0d47c9&" alt="roblox icon" style="height:32px; width:32px; border-radius:8px; object-fit:cover; margin-right:15px;">
+            <div class="info">
+              <div class="head">Roblox</div>
+              <div class="sub-title">potatogamer9002</div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Right column: form and group card -->
+      <div class="column right">
+        <div class="text">Message me</div>
+        <form action="#">
+          <div class="fields">
+            <div class="field name">
+              <input type="text" placeholder="Name" required>
+            </div>
+            <div class="field email">
+              <input type="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Subject" required>
+          </div>
+          <div class="field textarea">
+            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+          </div>
+          <div class="button-area">
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+
+        <!-- Group card directly under form -->
+        <div class="text" style="margin-top:30px;">My Roblox Group</div>
+        <div style="display:flex; align-items:center; background:#222; padding:20px; border-radius:8px; margin-top:10px;">
+          <img src="https://tr.rbxcdn.com/0c7b5c2596eabeed57931d60f6cc0315/150/150/Image/Png" alt="Group Icon" style="height:70px; width:70px; border-radius:10px; object-fit:cover; margin-right:20px;">
+          <div>
+            <h3 style="margin:0; font-size:22px;">Join my Roblox group</h3>
+            <p style="margin:5px 0;">Candlestick Studios</p>
+            <a href="https://www.roblox.com/groups/4616307/Candlestick-studios#!/about" target="_blank" style="display:inline-block; padding:8px 16px; background:crimson; color:white; text-decoration:none; border-radius:5px; margin-top:5px;">Join Group</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
-
 </section>
+
 
 
     <!-- footer section start -->
