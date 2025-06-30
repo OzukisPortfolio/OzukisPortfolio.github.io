@@ -610,16 +610,66 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
-        width: 100%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about .about-content .left {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.about .about-content .left img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about .about-content .right {
+  flex: 1 1 500px;
+}
+
+.about .about-content .right .text {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about .about-content .right .text span {
+  color: crimson;
+}
+
+.about .about-content .right p {
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 30px;
+  margin-top: 25px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: crimson;
+  background: none;
+}
+
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
